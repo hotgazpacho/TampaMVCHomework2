@@ -2,7 +2,7 @@
 
 namespace Homework2.Models
 {
-    public abstract class Entity
+    public abstract class Entity : IEntity
     {
         public long Id { get; set; }
 
