@@ -5,31 +5,31 @@ using System.Web;
 
 namespace Homework2.Models
 {
-    public class CustomerActiveRecordRepository : IRepository<ICustomer>
+    public class CustomerActiveRecordRepository : IRepository<Customer>
     {
-        #region IRepository<ICustomer> Members
+        #region IRepository<Customer> Members
 
-        public IEnumerable<ICustomer> FindAll()
+        public IEnumerable<Customer> FindAll()
         {
-            return Customer.FetchAll() as IEnumerable<ICustomer>;
+            return Customer.FetchAll();
         }
 
-        public ICustomer FindById(long Id)
+        public Customer FindById(long Id)
         {
-            return Customer.FetchById(Id) as ICustomer;
+            return Customer.FetchById(Id);
         }
 
-        public void Insert(ICustomer entity)
-        {
-            ((Customer)entity).Save();
-        }
-
-        public void Update(ICustomer entity)
+        public void Insert(Customer entity)
         {
             ((Customer)entity).Save();
         }
 
-        public void Delete(ICustomer entity)
+        public void Update(Customer entity)
+        {
+            ((Customer)entity).Save();
+        }
+
+        public void Delete(Customer entity)
         {
             DeleteById(entity.Id);
         }
