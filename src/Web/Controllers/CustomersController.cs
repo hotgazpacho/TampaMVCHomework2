@@ -13,9 +13,6 @@ namespace Homework2.Controllers
         {
             _customerRepository = repository;
         }
-
-        // Need to inject this dependency rather than make it explicit...
-        public CustomersController() : this(new CustomerActiveRecordRepository()) { }
         
         public ActionResult Index(int? page)
         {
