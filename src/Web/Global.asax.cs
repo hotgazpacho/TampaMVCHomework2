@@ -57,7 +57,7 @@ namespace Homework2
             if (_container == null)
             {
                 _container = new UnityContainer();
-                _container.RegisterType(typeof(IRepository<Customer>), typeof(CustomerActiveRecordRepository));
+                _container.RegisterType(typeof(IRepository<Customer>), typeof(CustomerRepository));
                 ControllerBuilder.Current.SetControllerFactory(typeof(MvcContrib.Unity.UnityControllerFactory));
 
                 //Type[] assemblyTypes = typeof(CustomersController).Assembly.GetTypes();

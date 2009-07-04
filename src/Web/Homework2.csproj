@@ -98,7 +98,7 @@
     <Compile Include="Models\Entities\Entity.cs" />
     <Compile Include="Models\Entities\ICustomer.cs" />
     <Compile Include="Models\Entities\IEntity.cs" />
-    <Compile Include="Models\Repositories\CustomerActiveRecordRepository.cs" />
+    <Compile Include="Models\Repositories\CustomerRepository.cs" />
     <Compile Include="Models\Repositories\IRepository.cs" />
     <Compile Include="Models\Validation\Validation.cs" />
     <Compile Include="Models\Validation\ValidationResult.cs" />
